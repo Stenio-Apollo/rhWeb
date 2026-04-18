@@ -1,14 +1,25 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "RhWeb",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "Support page for the Rhodie mobile app",
+  "type": "module",
   "scripts": {
-    "build": "tsc"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.5.3",
+    "vite": "^8.0.8"
   },
   "private": true
 }
