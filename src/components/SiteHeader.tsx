@@ -23,7 +23,7 @@ export function SiteHeader() {
           <img
             src={logo}
             alt="Rhodie logo"
-            className="h-12 w-12 rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.16)]"
+            className="h-12 w-12 shadow-[0_10px_28px_rgba(0,0,0,0.16)]"
           />
           <span>Rhodie Support</span>
         </a>
