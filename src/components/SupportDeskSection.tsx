@@ -9,9 +9,9 @@ import { SectionFrame } from "./ui/SectionFrame";
 import { SectionHeading } from "./ui/SectionHeading";
 
 const responseSteps = [
-  "Choose the issue type",
-  "Include the most useful context",
-  "Send one clean support email",
+  "Choose the Rhodie area affected",
+  "Include the details needed to reproduce it",
+  "Send one clear support message",
 ];
 
 export function SupportDeskSection() {
@@ -26,7 +26,7 @@ export function SupportDeskSection() {
         <SectionHeading
           eyebrow="Support desk"
           title="Choose the type of help you need."
-          description="This section keeps the support flow simple: pick a category, see what details matter, then send one clear email."
+          description="Pick the Rhodie area that’s affected, review the most useful details to include, and send one clean support request."
         />
 
         <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
@@ -129,11 +129,11 @@ export function SupportDeskSection() {
                 Contact
               </p>
               <h3 className="mb-3 text-[1.55rem] leading-[1.1] font-semibold tracking-[-0.03em] text-rh-ink">
-                One direct support channel.
+                One direct Rhodie support channel.
               </h3>
               <p className="mb-5 text-sm leading-[1.75] text-[rgba(43,43,43,0.76)]">
-                Keep the support path consistent across the entire experience so
-                users always know exactly where help lives.
+                Use one email contact for account issues, subscription questions,
+                journaling sync problems, insight confusion, and task or calendar bugs.
               </p>
               <ButtonLink href="mailto:s3.gerlin@gmail.com" className="w-full">
                 s3.gerlin@gmail.com

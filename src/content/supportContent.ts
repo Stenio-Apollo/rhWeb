@@ -20,31 +20,31 @@ export type FaqItem = {
 export const supportPaths: SupportPath[] = [
   {
     description:
-      "Help users recover drafts, understand sync issues, and keep reflective writing from disappearing when they need it most.",
-    kicker: "Journal entries",
-    metric: "Draft recovery",
-    title: "Protect the space where someone is honest.",
+      "Help with saved entries, gratitude logs, prompt responses, sync issues, and restoring personal writing across devices.",
+    kicker: "Journal and gratitude",
+    metric: "Entry recovery",
+    title: "Keep reflective writing safe, synced, and easy to recover.",
   },
   {
     description:
-      "Keep gratitude streaks consistent with support around reminders, edits, missed days, and restoring recent logs.",
-    kicker: "Daily gratitude",
-    metric: "Habit continuity",
-    title: "Support routines that stabilize the day.",
-  },
-  {
-    description:
-      "Clarify what insights are showing, why patterns change, and how the app turns check-ins into useful perspective.",
-    kicker: "Insights",
+      "Explain how the insights tab updates, what activity affects it, and why the feed or summaries may look different over time.",
+    kicker: "Insights feed",
     metric: "Pattern clarity",
-    title: "Make the app feel understandable, not opaque.",
+    title: "Make Rhodie insights feel useful instead of confusing.",
   },
   {
     description:
-      "Resolve planner issues around recurring tasks, calendar timing, overdue flows, and keeping mental health habits visible.",
+      "Resolve task board, due date, recurring task, and calendar sync issues so routines and responsibilities stay visible.",
     kicker: "Tasks and calendar",
     metric: "Structure support",
-    title: "Help routines stay intact when life gets noisy.",
+    title: "Keep planning tools aligned with the user’s real schedule.",
+  },
+  {
+    description:
+      "Handle restore purchases, Rhodie Pro access, billing questions, and account-level issues like sign-in, deletion, and subscription visibility.",
+    kicker: "Account and billing",
+    metric: "Access continuity",
+    title: "Support secure access and paid features without back-and-forth.",
   },
 ];
 
@@ -52,17 +52,17 @@ export const supportTopics: Record<string, SupportTopic> = {
   account: {
     details: [
       "The email tied to the account",
-      "Whether the issue is sign-in, reset, or account deletion",
+      "Whether the issue is sign-in, account sync, or account deletion",
       "The device and OS version currently in use",
     ],
     emailSubject: "Rhodie account support",
     summary:
-      "Access recovery, password resets, email changes, and secure account deletion requests.",
+      "Sign-in problems, account recovery, sync confusion, and secure account deletion requests.",
     title: "Account access",
   },
   features: {
     details: [
-      "Which area is affected: journal, gratitude, insights, or planner",
+      "Which area is affected: journal, gratitude, insights, tasks, or calendar",
       "A short description of what the user expected to happen",
       "One screenshot or screen recording if available",
     ],
@@ -88,28 +88,28 @@ export const faqItems: FaqItem[] = [
   {
     question: "How do I recover missing journal or gratitude entries?",
     answer:
-      "Start by confirming you are signed into the correct account and on a stable connection. If entries still do not appear, send support your device model, OS version, and the approximate time the content was created.",
+      "First confirm you are signed into the correct Rhodie account and connected to the internet. If your entries still do not appear, email support with your device model, OS version, and the approximate date and time the entry was created.",
   },
   {
     question: "Why is my insight page not updating?",
     answer:
-      "Insights rely on recent activity from journaling, gratitude, and planning behavior. Update the app, reopen it after a minute, and make sure background refresh permissions are available before contacting support.",
+      "The insights tab depends on recent activity from journaling, gratitude, and planning. Update the app, reopen it after a minute, and make sure your account is fully synced before contacting support.",
   },
   {
     question: "My planner or calendar looks off. What should I check first?",
     answer:
-      "Refresh the planner view and verify your device timezone. If recurring tasks are involved, include one example task and its intended schedule in your support email so the issue can be reproduced.",
+      "Refresh the planner view, confirm your timezone is correct, and check whether the issue involves recurring tasks or calendar sync. If you email support, include one example task and the schedule you expected.",
   },
   {
     question: "How do I delete my account?",
     answer:
-      "Send an email from the address connected to your account to s3.gerlin@gmail.com with the subject Account Deletion Request. Include your full name and sign-up platform so the request can be verified and handled safely.",
+      "You can request deletion from inside the app account area or email support from the address tied to your Rhodie account. Include your full name and sign-in platform so the request can be verified safely.",
   },
 ];
 
 export const supportMoments = [
-  "A calm support path for users who already feel overloaded",
-  "Clear issue routing without making people guess where to click",
-  "A single support email flow with better context collection",
-  "Fast answers for common mental-health routine blockers",
+  "Rhodie-specific help for journaling, gratitude, tasks, calendar, and insights",
+  "Clear routing for account, billing, and Rhodie Pro subscription issues",
+  "One direct support flow that collects the details needed to reproduce issues",
+  "Fast guidance for the routine tools users rely on every day",
 ];

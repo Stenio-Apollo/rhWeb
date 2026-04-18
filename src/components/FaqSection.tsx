@@ -10,7 +10,7 @@ import { SectionHeading } from "./ui/SectionHeading";
 const quickChecks = [
   "Confirm the latest app version is installed",
   "Restart the app and the device once",
-  "Check internet and timezone settings",
+  "Check internet, account, and timezone settings",
   "Capture one screenshot if the issue is visible",
 ];
 
@@ -23,8 +23,8 @@ export function FaqSection() {
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <SectionHeading
             eyebrow="Frequently asked questions"
-            title="Quick answers for the issues users hit most often."
-            description="The FAQ stays short on purpose, so users can scan it quickly on desktop or mobile."
+            title="Quick answers for the Rhodie issues users run into most."
+            description="The FAQ stays short on purpose so users can quickly check the common blockers around entries, insights, planning, account access, and subscriptions."
           />
 
           <GlassPanel className="p-6">

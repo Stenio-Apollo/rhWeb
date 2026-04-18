@@ -11,8 +11,8 @@ export function SupportPathsSection() {
         <div className="grid items-start gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <SectionHeading
             eyebrow="Overview"
-            title="Support organized into a few clear entry points."
-            description="Instead of making people scan a long page, the support experience is grouped into the main areas users ask about most."
+            title="Support grouped around the parts of Rhodie people actually use."
+            description="Instead of generic help copy, this page is organized around the app’s real features: journaling, gratitude, insights, tasks, calendar tools, account access, and subscriptions."
           />
 
           <GlassPanel className="bg-[linear-gradient(135deg,rgba(228,224,212,0.94)_0%,rgba(251,247,243,0.96)_100%)] p-6">

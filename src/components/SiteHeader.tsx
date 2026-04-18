@@ -2,21 +2,32 @@ import { useState } from "react";
 
 import logo from "../assets/rhNative.png";
 
-const navItems = [
+const supportNavItems = [
   { href: "#support-overview", label: "Overview" },
   { href: "#support-desk", label: "Support" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
 
-export function SiteHeader() {
+const legalNavItems = [
+  { href: "/", label: "Support" },
+  { href: "/terms", label: "Terms" },
+  { href: "/privacy", label: "Privacy" },
+];
+
+type SiteHeaderProps = {
+  mode?: "support" | "legal";
+};
+
+export function SiteHeader({ mode = "support" }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = mode === "legal" ? legalNavItems : supportNavItems;
 
   return (
     <div className="sticky top-0 z-30 border-b border-[rgba(43,43,43,0.05)] bg-[rgba(251,247,243,0.68)] backdrop-blur-xl">
       <div className="mx-auto flex w-[min(1180px,calc(100%-32px))] items-center justify-between gap-4 py-4 max-md:w-[min(100%-20px,1180px)]">
         <a
-          href="#top"
+          href={mode === "legal" ? "/" : "#top"}
           aria-label="Rhodie support home"
           className="inline-flex items-center gap-3.5 font-semibold tracking-[0.02em] text-rh-ink"
         >

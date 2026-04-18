@@ -4,9 +4,9 @@ import { RevealSection } from "./ui/RevealSection";
 import { SectionFrame } from "./ui/SectionFrame";
 
 const closingNotes = [
-  "Users should know within a few seconds where support lives.",
-  "The visual language stays calm and premium without feeling cold.",
-  "Every section is responsive and sized to own the full display on scroll.",
+  "Users should know where to get help for Rhodie within a few seconds.",
+  "The page should describe the app clearly enough that support questions start with the right context.",
+  "Legal and support links should stay easy to find for subscriptions and account issues.",
 ];
 
 export function ClosingSection() {
@@ -25,8 +25,8 @@ export function ClosingSection() {
                 Need direct help?
               </h2>
               <p className="max-w-[640px] text-base leading-[1.8] text-[rgba(43,43,43,0.76)]">
-                Email support with a short description of the issue, your
-                device, and any screenshot that helps explain the problem.
+                Email support with the Rhodie feature involved, your device,
+                and any screenshot or example that makes the problem easier to reproduce.
               </p>
             </div>
 

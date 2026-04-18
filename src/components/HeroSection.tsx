@@ -5,9 +5,9 @@ import { RevealSection } from "./ui/RevealSection";
 import { SectionFrame } from "./ui/SectionFrame";
 
 const trustPoints = [
-  "Journal and gratitude help",
-  "Insight and planner support",
-  "Clear FAQ answers",
+  "Journal, gratitude, and insights support",
+  "Tasks, calendar, and Rhodie Pro help",
+  "Direct account and billing guidance",
 ];
 
 export function HeroSection() {
@@ -31,15 +31,16 @@ export function HeroSection() {
         >
           <GlassPanel className="border-[rgba(251,247,243,0.22)] bg-[rgba(251,247,243,0.56)] p-5 md:px-7 md:py-6">
             <p className="text-[0.82rem] leading-none font-medium uppercase tracking-[0.18em] text-rh-ink">
-              Men&apos;s mental health support
+              Rhodie app support
             </p>
             <h1 className="mb-4 text-[clamp(2.6rem,7vw,5.4rem)] leading-[0.94] font-semibold tracking-[-0.05em] text-rh-ink">
-              Clean support, easier to follow.
+              Specific help for the Rhodie experience.
             </h1>
             <p className="mb-6 max-w-[480px] text-[1rem] leading-[1.75] text-[rgba(43,43,43,0.78)]">
-              Rhodie supports journaling, gratitude, insights, and planning.
-              This page gives users a direct path to answers, support, and
-              contact without extra noise.
+              Rhodie is a men&apos;s wellness app built around journaling,
+              gratitude, task planning, calendar structure, curated mental
+              health insights, and Rhodie Pro subscriptions. This page helps
+              users get answers fast without guessing where to go.
             </p>
 
             <div className="mb-6 flex flex-wrap gap-3 max-md:flex-col">
