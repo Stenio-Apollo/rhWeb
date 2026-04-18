@@ -19,10 +19,10 @@ export function HeroSection() {
       <div
         className="absolute inset-0 rounded-[36px] bg-cover bg-[center_34%] bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(43, 43, 43, 0.28) 0%, rgba(43, 43, 43, 0.56) 100%), url(${backgroundImage})`,
+          backgroundImage: `url(${backgroundImage})`,
         }}
       />
-      <div className="absolute inset-0 rounded-[36px] bg-[linear-gradient(90deg,rgba(43,43,43,0.12),transparent_40%),radial-gradient(circle_at_top_left,rgba(251,247,243,0.14),transparent_26%)]" />
+      <div className="absolute inset-0 rounded-[36px] bg-[linear-gradient(180deg,rgba(43,43,43,0.12)_0%,rgba(43,43,43,0.34)_100%),linear-gradient(90deg,rgba(43,43,43,0.08),transparent_40%),radial-gradient(circle_at_top_left,rgba(251,247,243,0.1),transparent_26%)]" />
 
       <div className="relative z-10 flex min-h-[72svh] items-end px-4 py-8 md:min-h-[78svh] md:px-8 md:py-10">
         <RevealSection
