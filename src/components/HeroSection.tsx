@@ -4,6 +4,8 @@ import { GlassPanel } from "./ui/GlassPanel";
 import { RevealSection } from "./ui/RevealSection";
 import { SectionFrame } from "./ui/SectionFrame";
 
+const logoImage = "/images/iconNew.png";
+
 const trustPoints = [
   "Journal, gratitude, and insights support",
   "Tasks, calendar, and Rhodie Pro help",
@@ -30,11 +32,16 @@ export function HeroSection() {
           className="mt-3 w-full max-w-[540px] self-start md:mt-1 mb-70"
         >
           <GlassPanel className="border-[rgba(251,247,243,0.22)] bg-[rgba(251,247,243,0.56)] p-5 md:px-7 md:py-6">
+            <img
+              src={logoImage}
+              alt="Rhodie logo"
+              className="mb-5 h-16 w-16 rounded-[18px] shadow-[0_16px_34px_rgba(43,43,43,0.2)]"
+            />
             <p className="text-[0.82rem] leading-none font-medium uppercase tracking-[0.18em] text-rh-ink">
               Rhodie app support
             </p>
             <h1 className="mb-4 text-[clamp(2.6rem,7vw,5.4rem)] leading-[0.94] font-semibold tracking-[-0.05em] text-rh-ink">
-              Specific help for the Rhodie experience.
+              Stop Burning Out Join the Rhodie experience.
             </h1>
             <p className="mb-6 max-w-[480px] text-[1rem] leading-[1.75] text-[rgba(43,43,43,0.78)]">
               Rhodie is a men&apos;s wellness app built around journaling,
@@ -44,8 +51,11 @@ export function HeroSection() {
             </p>
 
             <div className="mb-6 flex flex-wrap gap-3 max-md:flex-col">
-              <ButtonLink href="mailto:s3.gerlin@gmail.com" className="max-md:w-full">
-                Email support
+              <ButtonLink
+                href="https://apps.apple.com/us/app/rhodie/id6762026555"
+                className="max-md:w-full"
+              >
+                Get Rhodie
               </ButtonLink>
               <ButtonLink
                 href="#support-overview"

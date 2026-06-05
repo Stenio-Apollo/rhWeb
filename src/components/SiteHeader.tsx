@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import logo from "../assets/rhNative.png";
+const logoImage = "/images/iconNew.png";
 
 const supportNavItems = [
   { href: "#support-overview", label: "Overview" },
@@ -32,9 +32,9 @@ export function SiteHeader({ mode = "support" }: SiteHeaderProps) {
           className="inline-flex items-center gap-3.5 font-semibold tracking-[0.02em] text-rh-ink"
         >
           <img
-            src={logo}
+            src={logoImage}
             alt="Rhodie logo"
-            className="h-12 w-12 shadow-[0_10px_28px_rgba(0,0,0,0.16)]"
+            className="h-12 w-12 rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.16)]"
           />
           <span>Rhodie Support</span>
         </a>
